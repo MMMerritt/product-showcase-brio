@@ -1,0 +1,1273 @@
+html {
+    height: 100%;
+    font-size: 100%;
+}
+
+body {
+    font-family: 'Futura', 'Arial', 'Helvetica', 'sans-serif';
+    min-height: 100%;
+    color: #282828;
+}
+
+p {
+    margin: 0;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    max-width: 1142px;
+    margin: 0 auto;
+    background: #fff;
+    z-index: 10;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    padding: 5px;
+    justify-self: start;
+    align-self: center;
+    grid-column: 1 / 3;
+}
+
+.top-logo {
+    max-width: 90%;
+    min-width: 50px;
+    height: auto;
+}
+
+.navbar-links {
+    display: none;
+}
+
+.social-media-links.top-nav {
+    display: none;
+}
+
+.menu {
+    max-width: 100%;
+    height: auto;
+    padding: 12px 16px;
+    justify-self: end;
+    align-self: center;
+    grid-column: 11 / 13;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1142px;
+    margin: 0 auto;
+    z-index: 5;
+    box-sizing: border-box;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 10px 50px 50px 50px 60px 75px 200px 40px 40px 55px 87px 50px 365px 410px 365px 410px
+    365px 410px 20px 20px 40px 40px 175px 70px 110px 110px 60px 170px 70px 175px 70px 110px 110px 60px 175px
+    40px 50px 200px 200px 275px 30px 70px 80px 75px 15px;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+}
+
+.hero-text-top, .hero-text-middle, .hero-text-bottom {
+    font-family: 'Lantinghei SC';
+    font-size: 28px;
+    align-self: end;
+}
+
+.hero-text-top {
+    grid-column: 1 / 13;
+    grid-row: 2 / 3;
+    justify-self: center;
+}
+
+.hero-text-top:hover {
+    color: #D88812;
+}
+
+.coffee-illustration {
+    grid-column: 2 / 12;
+    grid-row: 6 / 8;
+    align-self: end;
+    justify-self: center;
+    padding-top: 20px;
+    max-width: 310px;
+    height: auto;
+}
+
+.hero-text-middle {
+    grid-column: 1 / 13;
+    grid-row: 3 / 4;
+    justify-self: center;
+}
+
+.hero-text-middle:hover {
+    color: #9A09AD;
+}
+
+.hero-text-bottom {
+    grid-column: 1 / 13;
+    grid-row: 4 / 5;
+    justify-self: center;
+}
+
+.hero-text-bottom:hover {
+    color: #BD1A3E;
+}
+
+.yellow-circle {
+    grid-column: 5 / 6;
+    grid-row: 1 / 4;
+    max-width: 70%;
+    height: auto;
+}
+
+.purple-circle {
+    grid-column: 9 / 10;
+    grid-row: 3 / 4;
+    max-width: 100%;
+    height: auto;
+}
+
+.red-circle {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+    max-width: 100%;
+    height: auto;
+    justify-self: end;
+}
+
+.cta-button {
+    grid-column: 1 / 13;
+    grid-row: 5 / 6;
+    justify-self: center;
+    align-self: end;
+    margin: 10px;
+    padding: 10px 25px;
+    border: 1px solid #E2A610;
+    border-radius: 10px;
+    background-color: #E2A610;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+.cta-button:hover {
+    border: 1px solid #D88812;
+    background-color: #D88812;
+    border-radius: 25px;
+}
+
+.down-arrow {
+    display: none;
+}
+
+.line-separator-hero {
+    grid-column: 1 / 13;
+    grid-row: 9 / 10;
+    align-self: center;
+    height:.5px;
+    background:#D8D8D8;
+    border-bottom: .5px solid #D8D8D8;
+}
+
+.heading-2.roasts {
+    grid-column: 1 / 13;
+    grid-row: 11 / 12;
+    justify-self: center;
+    align-self: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #979797;
+}
+
+.roast-column.kenya {
+    grid-column: 1 / 13;
+    grid-row: 13 / 15;
+    justify-self: center;
+    display: grid;
+    grid-template-rows: 365px 50px 50px 50px 175px 40px;
+}
+
+.roast-column.brazil {
+    grid-column: 1 / 13;
+    grid-row: 15 / 17;
+    justify-self: center;
+    display: grid;
+    grid-template-rows: 365px 50px 50px 50px 175px 40px;
+}
+
+.roast-column.peru {
+    grid-column: 1 / 13;
+    grid-row: 17 / 19;
+    justify-self: center;
+    display: grid;
+    grid-template-rows: 365px 50px 50px 50px 175px 40px;
+}
+
+.roast-column {
+    text-align: center;
+    grid-column: span 2;
+}
+
+.coffee-bag {
+    max-width: 100%;
+    height: auto;
+    justify-self: center;
+    width: 200px;
+    height: 333px;
+}
+
+.heading-2 {
+    font-family: 'Lantinghei SC';
+    font-size: 32px;
+}
+
+.heading-3 {
+    font-family: 'Lantinghei SC';
+    font-weight: 600;
+    font-size: 32px;
+    padding-top: 15px;
+    align-self: end;
+}
+
+.heading-4 {
+    font-family: 'Lantinghei SC';
+    font-size: 21px;
+    align-self: end;
+}
+
+.heading-5 {
+    font-family: 'Lantinghei SC';
+    font-size: 16px;
+    align-self: end;
+}
+
+.description {
+    padding-top: 30px;
+    margin: 0 10px;
+    max-width: 325px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.button {
+    color: #D88812;
+    align-self: start;
+}
+
+.button:hover {
+    color: #965B03;
+}
+
+.line-separator-roasts {
+    grid-column: 1 / 13;
+    grid-row: 20 / 21;
+    align-self: end;
+    height:.5px;
+    background:#D8D8D8;
+    border-bottom: .5px solid #D8D8D8;
+}
+
+.heading-2.story {
+    grid-column: 1 / 13;
+    grid-row: 24 / 25;
+    justify-self: center;
+    align-self: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #979797;
+}
+
+.column-top-left {
+    grid-column: 1 / 13;
+    grid-row: 25 / 28;
+    font-weight: 500;
+    line-height: 21px;
+    font-size: 14px;
+    text-align: left;
+    padding: 40px 20px 0 10px;
+}
+
+.definition {
+    font-style: italic;
+}
+
+.column-text {
+    padding-top: 40px;
+    font-style: normal;
+}
+
+.coffee-circle {
+    max-width: 150px;
+    height: auto;
+}
+
+.column-top-right {
+    grid-column: 1 / 13;
+    grid-row: 23 / 24;
+    align-self: center;
+    justify-self: center;
+}
+
+.column-bottom-left {
+    grid-column: 1 / 13;
+    grid-row: 30 / 31;
+    align-self: center;
+    justify-self: center;
+}
+
+.heading-2.sustainability {
+    grid-column: 1 / 13;
+    grid-row: 31 / 32;
+    justify-self: center;
+    align-self: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #979797;
+}
+
+.column-bottom-right {
+    grid-column: 1 / 13;
+    grid-row: 32 / 35;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21px;
+    font-size: 14px;
+    text-align: left;
+    padding: 0 10px 0 20px;
+}
+
+.contact-container {
+    grid-column: 1 / 13;
+    grid-row: 36 / 41;
+    background: #450D4F;
+    display: grid;
+    grid-template-columns: 1.4fr .95fr 1fr;
+    grid-template-rows: 40px 50px 150px 50px 50px 360px 10px;
+    grid-row-gap: 10px;
+}
+
+.heading-2.contact {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    justify-self: center;
+    align-self: center;
+    color: #E2E2E2;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #E2E2E2;
+}
+
+.contact-left {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    color: #E2E2E2;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21px;
+    font-size: 14px;
+    text-align: left;
+    padding: 25px 20px 0 25px;
+}
+
+.form-name {
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+    align-self: center;
+    max-width: 100%;
+    height: auto;
+    padding: 0 15px;
+}
+
+.name-label {
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+    align-self: center;
+    padding-left: 30px;
+    color: #E2E2E2;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21px;
+    font-size: 16px;
+    text-align: left;
+    z-index: 10;
+}
+
+.form-email {
+    grid-column: 1 / 4;
+    grid-row: 5 / 6;
+    align-self: center;
+    max-width: 100%;
+    height: auto;
+    padding: 0 15px;
+}
+
+.email-label {
+    grid-column: 1 / 4;
+    grid-row: 5 / 6;
+    align-self: center;
+    padding-left: 30px;
+    color: #E2E2E2;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21px;
+    font-size: 16px;
+    text-align: left;
+    z-index: 10;
+}
+
+.form-message {
+    grid-column: 1 / 4;
+    grid-row: 6 / 7;
+    padding: 25px 15px 0 15px;
+    max-width: 90%;
+    height: 240px;
+}
+
+.message-label {
+    grid-column: 1 / 4;
+    grid-row: 6 / 7;
+    align-self: start;
+    padding-top: 40px;
+    padding-left: 30px;
+    color: #E2E2E2;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21px;
+    font-size: 16px;
+    text-align: left;
+    z-index: 10;
+}
+
+.send-button {
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+    justify-self: start;
+    align-self: end;
+    margin: 10px 20px;
+    padding: 10px 25px;
+    border: 1px solid #E2A610;
+    border-radius: 10px;
+    background-color: #E2A610;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+.send-button:hover {
+border: 1px solid #D88812;
+background-color: #D88812;
+border-radius: 25px;
+}
+
+/*grid-column: 1 / 13;
+grid-row: 5 / 6;
+justify-self: center;
+align-self: end;
+margin: 10px;
+padding: 10px 25px;
+border: 1px solid #E2A610;
+border-radius: 10px;
+background-color: #E2A610;
+text-align: center;
+font-size: 14px;
+color: #fff;
+}
+
+.cta-button:hover {
+border: 1px solid #D88812;
+background-color: #D88812;
+border-radius: 25px;
+}*/
+
+.footer-links-left {
+    font-size: 14px;
+    grid-column: 1 / 7;
+    grid-row: 44 / 45;
+    justify-self: center;
+}
+
+.footer-links-right {
+    font-size: 14px;
+    grid-column: 7 / 13;
+    grid-row: 44 / 45;
+    justify-self: center;
+}
+
+.footer-link {
+    padding-top: 20px;
+}
+
+.footer-logo {
+    grid-column: 1 / 13;
+    grid-row: 42 / 43;
+    align-self: center;
+    justify-self: center;
+}
+
+.footer-nav {
+    grid-column: 1 / 13;
+    grid-row: 43 / 44;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+.social-link {
+    width: 30px;
+    height: 30px;
+    padding: 0 5px;
+}
+
+.copyright {
+    font-size: 14px;
+    padding-top: 15px;
+    justify-self: end;
+    align-self: end;
+}
+
+@media only screen and (min-width: 440px) {
+
+  .container {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: 10px 50px 50px 50px 60px 75px 250px 40px 40px 55px 87px 50px 365px 410px 365px 410px
+      365px 410px 20px 20px 40px 40px 175px 70px 110px 110px 60px 170px 70px 175px 70px 110px 110px 60px 175px
+      40px 50px 200px 200px 150px 30px 70px 80px 75px 15px;
+      grid-column-gap: 10px;
+      grid-row-gap: 5px;
+  }
+
+  .coffee-illustration {
+      grid-column: 2 / 12;
+      grid-row: 6 / 8;
+      align-self: end;
+      justify-self: center;
+      padding-top: 20px;
+      max-width: 360px;
+      height: auto;
+  }
+
+  .description {
+      margin: 0;
+  }
+
+  .form-message {
+      grid-column: 1 / 4;
+      grid-row: 6 / 7;
+      padding: 25px 15px 0 15px;
+      max-width: 90%;
+      height: 160px;
+  }
+
+  .contact-container {
+      grid-template-rows: 40px 50px 125px 50px 50px 260px 20px;
+  }
+
+}
+
+@media only screen and (min-width: 575px) {
+
+  .navbar-links {
+      font-size: 16px;
+      color: #8C1932;
+      grid-column: 5 / 9;
+      justify-self: center;
+      align-self: center;
+      padding: 20px 15px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 20px;
+  }
+
+  .top-link {
+      justify-self: center;
+  }
+
+  .top-link:hover {
+      color: #420D18;
+  }
+
+  .menu {
+      display: none;
+  }
+
+  .social-media-links.top-nav {
+      justify-self: end;
+      align-self: center;
+      display: block;
+      min-width: 115px;
+      padding: 20px 15px;
+      grid-column: 11 / 13;
+  }
+
+  .social-link {
+      width: 30px;
+      height: 30px;
+      padding-left: 5px;
+  }
+
+  .container {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: 10px 50px 50px 50px 60px 75px 250px 46px 45px 55px 87px 50px 365px 410px 365px 410px
+      365px 410px 20px 20px 40px 40px 175px 70px 110px 110px 60px 170px 70px 175px 70px 110px 110px 30px 150px
+      40px 70px 200px 200px 150px 30px 90px 20px;
+      grid-column-gap: 10px;
+      grid-row-gap: 5px;
+  }
+
+  .hero-text-top, .hero-text-middle, .hero-text-bottom {
+      font-family: 'Lantinghei SC';
+      font-size: 28px;
+      align-self: end;
+  }
+
+  .hero-text-top {
+      grid-column: 1 / 13;
+      grid-row: 2 / 3;
+      justify-self: center;
+  }
+
+  .hero-text-middle {
+      grid-column: 1 / 13;
+      grid-row: 3 / 4;
+      justify-self: center;
+  }
+
+  .hero-text-bottom {
+      grid-column: 1 / 13;
+      grid-row: 4 / 5;
+      justify-self: center;
+  }
+
+  .purple-circle {
+      grid-column: 9 / 10;
+      grid-row: 3 / 4;
+      max-width: 100%;
+      height: auto;
+  }
+
+  .red-circle {
+      grid-column: 3 / 4;
+      grid-row: 4 / 5;
+      max-width: 100%;
+      height: auto;
+      justify-self: end;
+  }
+
+  .cta-button {
+      max-width: 220px;
+      height: auto;
+  }
+
+  .down-arrow {
+      display: block;
+      grid-column: 1 / 13;
+      grid-row: 8 / 9;
+      justify-self: center;
+      padding-top: 20px;
+  }
+
+  .heading-2 {
+      font-family: 'Lantinghei SC';
+      font-size: 36px;
+  }
+
+  .roast-column.kenya {
+      grid-column: 1 / 13;
+      grid-row: 13 / 15;
+      justify-self: center;
+      display: grid;
+      grid-template-rows: 365px 50px 50px 50px 200px 60px;
+  }
+
+  .roast-column.brazil {
+      display: grid;
+      grid-template-rows: 365px 50px 50px 50px 200px 60px;
+  }
+
+  .roast-column.peru {
+      grid-column: 1 / 13;
+      grid-row: 17 / 20;
+      justify-self: center;
+      display: grid;
+      grid-template-rows: 365px 50px 50px 50px 200px 60px;
+  }
+
+  .description {
+      line-height: 24px;
+      font-size: 16px;
+  }
+
+  .button {
+      align-self: end;
+  }
+
+  .heading-2.story {
+      grid-column: 1 / 13;
+      grid-row: 24 / 25;
+  }
+
+  .coffee-circle {
+      max-width: 175px;
+      height: auto;
+  }
+
+  .column-top-left {
+      line-height: 24px;
+      font-size: 16px;
+  }
+
+  .column-bottom-right {
+      line-height: 24px;
+      font-size: 16px;
+  }
+
+  .contact-container {
+      display: grid;
+      grid-template-columns: 1.4fr .95fr 1fr;
+      grid-template-rows: 40px 50px 115px 50px 50px 300px 20px;
+      grid-row-gap: 10px;
+  }
+
+  .form-message {
+      max-width: 90%;
+      height: 190px;
+  }
+
+  .footer-links-left {
+      grid-column: 1 / 2;
+      grid-row: 42 / 44;
+  }
+
+  .footer-links-right {
+      grid-column: 2 / 3;
+      grid-row: 42 / 44;
+  }
+
+  .footer-logo {
+      grid-column: 6 / 8;
+  }
+
+  .footer-nav {
+      grid-column: 8 / 13;
+      grid-row: 42 / 43;
+      align-self: center;
+      justify-self: end;
+      text-align: right;
+      padding-right: 15px;
+  }
+
+  .social-link {
+      width: 30px;
+      height: 30px;
+      padding: 0 0 0 5px;
+  }
+
+  .copyright {
+      font-size: 14px;
+      padding-top: 15px;
+      justify-self: end;
+      align-self: end;
+  }
+
+  .footer-link {
+      padding-top: 20px;
+      padding-left: 15px;
+  }
+
+}
+
+@media only screen and (min-width: 675px) {
+
+  .container {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: 10px 50px 50px 50px 60px 120px auto 46px 45px 55px 87px 50px repeat(6, 106px) 109px
+      125px 125px 40px 200px 70px 110px 110px 60px 170px 70px 200px 70px 110px 110px 30px 150px 40px 70px 200px
+      200px 150px 30px 90px 20px;
+      grid-column-gap: 10px;
+      grid-row-gap: 5px;
+  }
+
+  .roast-column.kenya {
+      grid-column: 1 / 5;
+      grid-row: 13 / 20;
+      justify-self: center;
+      padding-left: 50px;
+  }
+
+  .roast-column.brazil {
+      grid-column: 5 / 9;
+      grid-row: 13 / 20;
+      justify-self: center;
+  }
+
+  .roast-column.peru {
+      grid-column: 9 / 13;
+      grid-row: 13 / 20;
+      justify-self: center;
+  }
+
+  .roast-column {
+      text-align: center;
+      grid-column: span 2;
+  }
+
+  .coffee-bag {
+      max-width: 100%;
+      height: auto;
+      justify-self: center;
+      width: 200px;
+      height: 333px;
+  }
+
+  .heading-2 {
+      font-family: 'Lantinghei SC';
+      font-size: 32px;
+  }
+
+  .description {
+      line-height: 21px;
+      font-size: 14px;
+  }
+
+  .contact-left {
+      padding: 30px 20px 0 25px;
+  }
+
+}
+
+@media only screen and (min-width: 720px) {
+
+  .container {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: 10px 50px 50px 50px 60px 120px auto 46px 45px 55px 87px 50px repeat(6, 106px) 109px
+      125px 125px 40px 70px 130px 110px 110px 60px 170px 70px 70px 130px 110px 110px 30px 150px 40px 70px 200px
+      200px 150px 30px 90px 20px;
+      grid-column-gap: 10px;
+      grid-row-gap: 5px;
+  }
+
+  .hero-text-top, .hero-text-middle, .hero-text-bottom {
+      font-family: 'Lantinghei SC';
+      font-size: 28px;
+      align-self: end;
+  }
+
+  .hero-text-top {
+      grid-column: 3 / 9;
+      grid-row: 2 / 3;
+      justify-self: center;
+  }
+
+  .coffee-illustration {
+      grid-column: 2 / 8;
+      grid-row: 3 / 8;
+      align-self: end;
+      justify-self: center;
+      padding-top: 60px;
+      padding-left: 30px;
+      max-width: 100%;
+      height: auto;
+  }
+
+  .hero-text-middle {
+      grid-column: 5 / 11;
+      grid-row: 3 / 4;
+      justify-self: center;
+      padding-left: 25px;
+  }
+
+  .hero-text-bottom {
+      grid-column: 6 / 13;
+      grid-row: 4 / 5;
+      justify-self: center;
+  }
+
+  .yellow-circle {
+      grid-column: 8 / 9;
+      grid-row: 1 / 4;
+  }
+
+  .purple-circle {
+      grid-column: 11 / 12;
+      grid-row: 4 / 5;
+      max-width: 100%;
+      height: auto;
+  }
+
+  .red-circle {
+      grid-column: 9 / 10;
+      grid-row: 6 / 7;
+      max-width: 100%;
+      height: auto;
+      justify-self: end;
+  }
+
+  .cta-button {
+      grid-column: 8 / 12;
+      grid-row: 5 / 6;
+      max-width: 75%;
+      height: auto;
+  }
+
+  .down-arrow {
+      grid-column: 1 / 13;
+      grid-row: 8 / 9;
+      justify-self: center;
+      padding-top: 20px;
+  }
+
+  .heading-2.roasts {
+      grid-column: 4 / 9;
+      grid-row: 11 / 12;
+      justify-self: center;
+      align-self: center;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #979797;
+  }
+
+  .heading-2 {
+      font-family: 'Lantinghei SC';
+      font-size: 42px;
+  }
+
+  .roast-column.kenya {
+      grid-column: 1 / 5;
+      grid-row: 13 / 20;
+      justify-self: center;
+      padding-left: 50px;
+      display: grid;
+      grid-template-rows: 375px 60px 60px 50px 200px 50px;
+  }
+
+  .roast-column.brazil {
+      grid-column: 5 / 9;
+      grid-row: 13 / 20;
+      justify-self: center;
+      display: grid;
+      grid-template-rows: 375px 60px 60px 50px 200px 50px;
+  }
+
+  .roast-column.peru {
+      display: grid;
+      grid-template-rows: 375px 60px 60px 50px 200px 50px;
+  }
+
+  .column-top-left {
+      grid-column: 1 / 7;
+      grid-row: 24 / 27;
+
+  }
+
+  .heading-2.story {
+      grid-column: 1 / 7;
+      grid-row: 23 / 24;
+  }
+
+  .coffee-circle {
+      max-width: 100%;
+      height: auto;
+  }
+
+  .column-top-right {
+      grid-column: 7 / 13;
+      grid-row: 23 / 28;
+  }
+
+  .column-bottom-left {
+      grid-column: 1 / 7;
+      grid-row: 31 / 35;
+  }
+
+  .heading-2.sustainability {
+      grid-column: 8 / 12;
+      grid-row: 30 / 31;
+      justify-self: center;
+      border-bottom: 1px solid #979797;
+  }
+
+  .column-bottom-right {
+      grid-column: 7 / 13;
+      grid-row: 31 / 34;
+      line-height: 24px;
+      font-size: 16px;
+  }
+
+  .contact-container {
+      display: grid;
+      grid-template-columns: 1.4fr .95fr 1fr;
+      grid-template-rows: 40px 50px 115px 50px 50px 280px 20px;
+      grid-row-gap: 10px;
+  }
+
+  .footer-link {
+      padding-top: 20px;
+      padding-left: 15px;
+  }
+
+}
+
+@media only screen and (min-width: 850px) {
+
+  .container {
+      grid-template-rows: 10px 50px 50px 50px 60px 120px auto 46px 45px 55px 87px 50px repeat(6, 106px) 109px
+      125px 125px 40px 70px 130px 110px 110px 60px 170px 70px 70px 130px 110px 110px 30px 150px 40px 70px 115px
+      100px 75px 30px 90px 20px;
+  }
+
+  .heading-3 {
+      font-size: 36px;
+      padding-top: 30px;
+  }
+
+  .heading-4 {
+      font-size: 24px;
+  }
+
+  .heading-5 {
+      font-size: 18px;
+  }
+
+  .description {
+      line-height: 24px;
+      font-size: 16px;
+  }
+
+  .contact-container {
+      display: grid;
+      grid-template-columns: 1.4fr .95fr 1fr;
+      grid-template-rows: 40px 70px 115px 80px 100px;
+      grid-row-gap: 10px;
+  }
+
+  .heading-2.contact {
+      grid-column: 1 / 1;
+      grid-row: 2 / 3;
+      justify-self: center;
+      color: #E2E2E2;
+      border-bottom: 1px solid #E2E2E2;
+  }
+
+  .contact-left {
+      grid-column: 1 / 1;
+      grid-row: 3 / 5;
+      padding: 40px 20px 0 25px;
+  }
+
+  .form-name {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      align-self: center;
+      max-width: 98%;
+      height: auto;
+      padding-left: 0;
+  }
+
+  .name-label {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      align-self: center;
+      padding-left: 15px;
+  }
+
+  .form-email {
+      grid-column: 3 / 4;
+      grid-row: 2 / 3;
+      align-self: center;
+      max-width: 260px;
+      height: 43px;
+      padding: 0 10px;
+  }
+
+  .email-label {
+      grid-column: 3 / 4;
+      grid-row: 2 / 3;
+      justify-self: start;
+      align-self: center;
+      padding-left: 25px;
+  }
+
+  .form-message {
+      grid-column: 2 / 4;
+      grid-row: 3 / 5;
+      padding-top: 25px;
+      padding-left: 0;
+      max-width: 97%;
+      height: auto;
+  }
+
+  .message-label {
+      grid-column: 2 / 3;
+      grid-row: 3 / 4;
+      justify-self: start;
+      align-self: start;
+      padding-top: 35px;
+      padding-left: 15px;
+  }
+
+  .send-button {
+      grid-column: 3 / 4;
+      grid-row: 5 / 6;
+      justify-self: end;
+      align-self: start;
+      font-size: 16px;
+  }
+
+}
+
+
+@media only screen and (min-width: 920px) {
+  .container {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: 10px 10px 60px 80px 80px 120px auto 46px 45px 55px 87px 50px repeat(6, 106px) 109px
+      125px 125px 40px 70px 130px 110px 110px 60px 170px 70px 70px 130px 110px 110px 30px 150px 40px 70px 115px
+      100px 75px 30px 90px 20px;
+      grid-column-gap: 20px;
+      grid-row-gap: 10px;
+  }
+
+  .hero-text-top, .hero-text-middle, .hero-text-bottom {
+      font-family: 'Lantinghei SC';
+      font-size: 36px;
+  }
+
+  .hero-text-top {
+      grid-column: 6 / 11;
+      grid-row: 3 / 4;
+      justify-self: center;
+  }
+
+  .hero-text-middle {
+      grid-column: 7 / 13;
+      grid-row: 4 / 5;
+      justify-self: center;
+
+  }
+
+  .hero-text-bottom {
+      grid-column: 8 / 13;
+      grid-row: 5 / 6;
+      justify-self: center;
+      align-self: end;
+  }
+
+  .coffee-illustration {
+      padding-top: 40px;
+      padding-left: 30px;
+      max-width: 110%;
+      height: auto;
+  }
+
+  .cta-button {
+      grid-column: 8 / 12;
+      grid-row: 6 / 7;
+      margin: 10px;
+      padding: 12px 25px;
+      border: 2px solid #E2A610;
+      border-radius: 10px;
+      background-color: #E2A610;
+      text-align: center;
+      font-size: 16px;
+      color: #fff;
+      justify-self: center;
+      align-self: end;
+  }
+
+  .heading-2 {
+      font-family: 'Lantinghei SC';
+      font-size: 48px;
+  }
+
+  .heading-2.roasts {
+      grid-column: 5 / 9;
+      grid-row: 11 / 12;
+      padding-bottom: 20px;
+  }
+
+  .roast-column.kenya {
+      padding-left: 15px;
+      display: grid;
+      grid-template-rows: 375px 85px 60px 50px 200px 35px;
+  }
+
+  .roast-column.brazil {
+      display: grid;
+      grid-template-rows: 375px 85px 60px 50px 200px 35px;
+  }
+
+  .roast-column.peru {
+      display: grid;
+      grid-template-rows: 375px 85px 60px 50px 200px 35px;
+  }
+
+  .coffee-bag {
+      width: 231px;
+      height: 375px;
+  }
+
+  .contact-container {
+      display: grid;
+      grid-template-columns: 1.6fr .95fr 1fr;
+      grid-template-rows: 40px 70px 115px 80px 100px;
+      grid-row-gap: 10px;
+  }
+
+  .contact-left {
+      line-height: 24px;
+      font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+
+  .hero-text-top, .hero-text-middle, .hero-text-bottom {
+      font-family: 'Lantinghei SC';
+      font-size: 42px;
+  }
+
+  .hero-text-middle {
+      grid-column: 7 / 12;
+      grid-row: 4 / 5;
+      justify-self: center;
+      padding-left: 25px;
+  }
+
+  .roast-column.kenya {
+      padding-left: 0;
+  }
+
+  .contact-container {
+      display: grid;
+      grid-template-columns: 1.8fr .95fr 1fr;
+      grid-template-rows: 40px 70px 115px 80px 100px;
+      grid-row-gap: 10px;
+  }
+
+  .column-bottom-left {
+      grid-row: 30 / 34;
+  }
+
+  .send-button {
+      margin-right: 15px;
+  }
+
+}
+
+@media only screen and (min-width: 1080px) {
+
+  .send-button {
+      margin-right: 30px;
+  }
+
+}
