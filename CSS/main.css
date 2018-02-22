@@ -399,6 +399,20 @@ p {
     color: #fff;
 }
 
+.form-name::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #E2E2E2;
+}
+.form-name::-moz-placeholder { /* Firefox 19+ */
+  color: #E2E2E2;
+  opacity: 1;
+}
+.form-name:-ms-input-placeholder { /* IE 10+ */
+  color: #E2E2E2;
+}
+.form-name:-moz-placeholder { /* Firefox 18- */
+  color: #E2E2E2;
+}
+
 .form-email {
     grid-column: 1 / 3;
     grid-row: 2 / 3;
@@ -413,6 +427,20 @@ p {
     color: #fff;
 }
 
+.form-email::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #E2E2E2;
+}
+.form-email::-moz-placeholder { /* Firefox 19+ */
+  color: #E2E2E2;
+  opacity: 1;
+}
+.form-email:-ms-input-placeholder { /* IE 10+ */
+  color: #E2E2E2;
+}
+.form-email:-moz-placeholder { /* Firefox 18- */
+  color: #E2E2E2;
+}
+
 .form-message {
     grid-column: 1 / 3;
     grid-row: 3 / 4;
@@ -422,6 +450,20 @@ p {
     border: 1px solid #979797;
     border-radius: 10;
     color: #fff;
+}
+
+.form-message::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #E2E2E2;
+}
+.form-message::-moz-placeholder { /* Firefox 19+ */
+  color: #E2E2E2;
+  opacity: 1;
+}
+.form-message:-ms-input-placeholder { /* IE 10+ */
+  color: #E2E2E2;
+}
+.form-message:-moz-placeholder { /* Firefox 18- */
+  color: #E2E2E2;
 }
 
 .send-button {
