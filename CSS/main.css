@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    font-family: 'Futura', 'Arial', 'Helvetica', 'sans-serif';
+    font-family: 'Futura', 'Arial', 'Helvetica', sans-serif;
     min-height: 100%;
     color: #282828;
 }
@@ -76,7 +76,8 @@ p {
 }
 
 .hero-text-top, .hero-text-middle, .hero-text-bottom {
-    font-family: 'Lantinghei SC';
+    font-family: 'Lantinghei SC', 'Work Sans', sans-serif;
+    font-weight: 300;
     font-size: 28px;
     align-self: end;
 }
@@ -224,26 +225,29 @@ p {
 }
 
 .heading-2 {
-    font-family: 'Lantinghei SC';
+    font-family: 'Lantinghei SC', 'Work Sans', sans-serif;
+    font-weight: 300;
     font-size: 32px;
 }
 
 .heading-3 {
-    font-family: 'Lantinghei SC';
-    font-weight: 600;
+    font-family: 'Lantinghei SC', 'Work Sans', sans-serif;
+    font-weight: 500;
     font-size: 32px;
     padding-top: 15px;
     align-self: end;
 }
 
 .heading-4 {
-    font-family: 'Lantinghei SC';
+    font-family: 'Lantinghei SC', 'Work Sans', sans-serif;
+    font-weight: 300;
     font-size: 21px;
     align-self: end;
 }
 
 .heading-5 {
-    font-family: 'Lantinghei SC';
+    font-family: 'Lantinghei SC', 'Work Sans', sans-serif;
+    font-weight: 300;
     font-size: 16px;
     align-self: end;
 }
@@ -633,12 +637,6 @@ p {
       grid-row-gap: 5px;
   }
 
-  .hero-text-top, .hero-text-middle, .hero-text-bottom {
-      font-family: 'Lantinghei SC';
-      font-size: 28px;
-      align-self: end;
-  }
-
   .hero-text-top {
       grid-column: 1 / 13;
       grid-row: 2 / 3;
@@ -686,7 +684,8 @@ p {
   }
 
   .heading-2 {
-      font-family: 'Lantinghei SC';
+      font-family: 'Lantinghei SC', 'Work Sans', sans-serif;
+      font-weight: 300;
       font-size: 36px;
   }
 
@@ -835,7 +834,8 @@ p {
   }
 
   .heading-2 {
-      font-family: 'Lantinghei SC';
+      font-family: 'Lantinghei SC', 'Work Sans', sans-serif;
+      font-weight: 300;
       font-size: 32px;
   }
 
@@ -860,12 +860,6 @@ p {
       200px 150px 30px 90px 20px;
       grid-column-gap: 10px;
       grid-row-gap: 5px;
-  }
-
-  .hero-text-top, .hero-text-middle, .hero-text-bottom {
-      font-family: 'Lantinghei SC';
-      font-size: 28px;
-      align-self: end;
   }
 
   .hero-text-top {
@@ -942,7 +936,8 @@ p {
   }
 
   .heading-2 {
-      font-family: 'Lantinghei SC';
+      font-family: 'Lantinghei SC', 'Work Sans', sans-serif;
+      font-weight: 300;
       font-size: 42px;
   }
 
@@ -1101,7 +1096,6 @@ p {
   }
 
   .hero-text-top, .hero-text-middle, .hero-text-bottom {
-      font-family: 'Lantinghei SC';
       font-size: 36px;
   }
 
@@ -1148,7 +1142,8 @@ p {
   }
 
   .heading-2 {
-      font-family: 'Lantinghei SC';
+      font-family: 'Lantinghei SC', 'Work Sans', sans-serif;
+      font-weight: 300;
       font-size: 48px;
   }
 
@@ -1195,7 +1190,6 @@ p {
 @media only screen and (min-width: 1080px) {
 
   .hero-text-top, .hero-text-middle, .hero-text-bottom {
-      font-family: 'Lantinghei SC';
       font-size: 42px;
   }
 
