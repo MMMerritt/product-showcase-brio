@@ -36,8 +36,8 @@ p {
 }
 
 .top-logo {
-    max-width: 90%;
-    min-width: 50px;
+    max-width: 100%;
+    min-width: 70px;
     height: auto;
 }
 
@@ -514,6 +514,8 @@ p {
     grid-row: 42 / 43;
     align-self: center;
     justify-self: center;
+    max-width: 110px;
+    height: auto;
 }
 
 .footer-nav {
@@ -756,10 +758,6 @@ p {
       grid-row: 42 / 44;
   }
 
-  .footer-logo {
-      grid-column: 6 / 8;
-  }
-
   .footer-nav {
       grid-column: 8 / 13;
       grid-row: 42 / 43;
@@ -790,6 +788,11 @@ p {
 }
 
 @media only screen and (min-width: 675px) {
+
+  .logo.top-logo {
+      max-width: 110px;
+      height: auto;
+  }
 
   .container {
       display: grid;
