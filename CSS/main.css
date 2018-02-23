@@ -300,6 +300,11 @@ p {
     padding: 40px 20px 0 10px;
 }
 
+.pronounce {
+    max-width: 100%;
+    height: auto;
+}
+
 .definition {
     font-style: italic;
 }
