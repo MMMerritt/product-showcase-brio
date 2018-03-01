@@ -24,6 +24,7 @@ p {
     box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto 2px;
 }
 
 .logo {
@@ -49,13 +50,88 @@ p {
     display: none;
 }
 
-.menu {
+/*mobile-nav {
     max-width: 100%;
     height: auto;
     padding: 12px 16px;
     justify-self: end;
     align-self: center;
     grid-column: 11 / 13;
+}*/
+
+.menu-btn {
+  max-width: 100%;
+  height: auto;
+  padding: 12px 16px;
+  grid-column: 11 / 13;
+  justify-self: end;
+  align-self: center;
+}
+
+.menu-btn div {
+	position: absolute;
+	left: 100%;
+	top: 64%;
+	padding-right: 8px;
+	margin-top: -0.50em;
+	line-height: 1.2;
+	font-size: 18px;
+	font-weight: 200;
+	vertical-align: middle;
+	z-index: 99;
+}
+
+.menu-btn span {
+	display: block;
+	width: 19px;
+	height: 3px;
+	margin: 4px 0;
+	background: rgb(0,0,0);
+	z-index: 99;
+}
+
+.responsive-menu{
+  display: none;
+}
+
+.responsive-menu.open {
+   grid-row: 2 / 3;
+   grid-column: 1 / 13;
+   justify-self: center;
+   display: block;
+   max-width: 100%;
+   background: #FFF;
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+   transform: translate(0,0);
+     -webkit-transform: translate(0,0); /** Chrome & Safari **/
+     -o-transform: translate(0,0); /** Opera **/
+     -moz-transform: translate(0,0); /** Firefox **/
+     z-index: 100;
+ }
+
+ ul {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     max-width: 100%;
+     background: rgba(255, 255, 255, 0.9);
+ }
+
+ li {
+     max-width: 100%;
+     padding: 10px 150px;
+     border-bottom: 1px solid #D8D8D8;
+     font-size: 14px;
+     color: #8C1932;
+     text-align: center;
+ }
+
+a {
+    text-decoration: none;
+    color: #8C1932;
 }
 
 .container {
@@ -74,6 +150,12 @@ p {
     grid-column-gap: 10px;
     grid-row-gap: 5px;
 }
+
+/*.container.open {
+    position: fixed;
+    top: 50;
+}*/
+
 
 .hero-text-top, .hero-text-middle, .hero-text-bottom {
     font-family: 'Lantinghei SC', 'Work Sans', sans-serif;
@@ -595,6 +677,12 @@ p {
 
 @media only screen and (min-width: 575px) {
 
+  a {
+      font-size: 16px;
+      color: #8C1932;
+      text-decoration: none;
+  }
+
   .navbar-links {
       font-size: 16px;
       color: #8C1932;
@@ -603,7 +691,7 @@ p {
       align-self: center;
       padding: 20px 15px;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 20px;
   }
 
@@ -615,8 +703,12 @@ p {
       color: #420D18;
   }
 
-  .menu {
+  .menu-btn {
       display: none;
+  }
+
+  .responsive-menu.open {
+    display: none;
   }
 
   .social-media-links.top-nav {
@@ -992,7 +1084,7 @@ p {
   }
 
   .heading-2.sustainability {
-      grid-column: 8 / 12;
+      grid-column: 7 / 13;
       grid-row: 30 / 31;
       justify-self: center;
       border-bottom: 1px solid #979797;

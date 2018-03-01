@@ -7,6 +7,7 @@
       <link rel="stylesheet" type="text/css" href="CSS/normalize.css">
       <link rel="stylesheet" type="text/css" href="CSS/main.css">
       <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
 
     <body class="landing">
@@ -17,10 +18,9 @@
 
 
         <div class="navbar-links">
-             <p class="top-link">ABOUT</p>
-             <p class="top-link">COFFEE</p>
-             <p class="top-link">SHOP</p>
-             <p class="top-link">CONTACT</p>
+             <a href="#coffee" class="top-link">COFFEE</a>
+             <a href="#about" class="top-link">ABOUT</a>
+             <a href="#contact" class="top-link">CONTACT</a>
         </div>
 
         <div class="social-media-links top-nav">
@@ -29,12 +29,38 @@
             <img src="images/Twitter.png" alt="twitter icon" class="social-link">
         </div>
 
-        <img src="images/menu.png" alt="menu" class="menu">
+        <!--<img src="images/menu.png" alt="menu" class="menu">
+        <a class="hamburger-nav"><img src="images/menu.png"></a>
+        <ul class="menu">
+            <a href="#coffee"><li>Coffee</li></a>
+            <a href="#about"><li>About</li></a>
+            <a href="#contact"><li>Contact</li></a>
+        </ul>-->
+
+  <!--<div class="mobile-nav">-->
+         <a href="#!" class="menu-btn" id="menu-btn">
+	          <div></div>
+	          <span></span>
+	          <span></span>
+	          <span></span>
+         </a>
+
+         <div class="responsive-menu" id="responsive-menu">
+            <ul>
+               <li><a href="#coffee">COFFEE</a></li>
+               <li><a href="#about">ABOUT</a></li>
+               <li><a href="#contact">CONTACT</a></li>
+            </ul>
+         </div>
+
+    <!--</div>-->
+
 
       </nav>
 
-      <div class="container">
+      <div class="container" id="container">
       <!--<section class="hero-content">-->
+
 
         <img src="images/Coffee-Illustration.png" alt="coffee and sunshine" class="coffee-illustration">
 
@@ -58,7 +84,7 @@
 
         <img src="images/down_chevron.png" alt="scroll down" class="down-arrow">
 
-        <div class="line-separator-hero"></div>
+        <div class="line-separator-hero" id="coffee"></div>
       <!--</section>-->
 
       <!--<section class="products">-->
@@ -93,7 +119,7 @@
               <p class="button">LEARN MORE</p>
         </div>
 
-        <div class="line-separator-roasts"></div>
+        <div class="line-separator-roasts" id="about"></div>
           <!--</div>-->
 
       <!--</section>-->
@@ -122,7 +148,7 @@
                 <img src="images/coffee_plant.png" alt="coffee plant" class="coffee-circle">
             </div>
 
-            <p class="heading-2 sustainability">Sustainability</p>
+            <p class="heading-2 sustainability">Our Commitment</p>
 
             <div class="column-bottom-right">
                 <p class="column-text">Great coffee requires focus, research, and love, which all begins at the source: the farms and farmers. We have established direct connections with farms to ensure that the farmers and their families who depend on the coffee trade are treated and compensated fairly. Our partners are devoted to harvesting top-quality coffee berries so that each roast embodies the complex and unique attributes of the region.</p>
@@ -134,7 +160,7 @@
 
       <section class="contact-container">
 
-        <p class="heading-2 contact">Contact</p>
+        <p class="heading-2 contact" id="contact">Contact</p>
 
         <p class="contact-left">We'd love to hear from you! Whether you want to send feedback, recommendations, requests, stocking interests, or just say hi, write us a message and we will respond ASAP.</p>
         <!--Usable Form-->
@@ -159,13 +185,13 @@
         <img src="images/brio-logo.svg" alt="brio coffee logo" class="logo footer-logo">
 
         <div class="footer-links-left">
-             <p class="footer-link">ABOUT</p>
-             <p class="footer-link">COFFEE</p>
+             <p class="footer-link"><a href="#about">ABOUT</a></p>
+             <p class="footer-link"><a href="#coffee">COFFEE</a></p>
         </div>
 
         <div class="footer-links-right">
-             <p class="footer-link">SHOP</p>
-             <p class="footer-link">CONTACT</p>
+             <p class="footer-link"><a href="#">SHOP</a></p>
+             <p class="footer-link"><a href="#contact">CONTACT</a></p>
         </div>
 
         <div class="footer-nav">
@@ -179,7 +205,10 @@
 
       <!--</footer>-->
       </div>
-      <script src="scripts/landing.js"></script>
+
+      <script src="JS/landing.js"></script>
+
+
     </body>
 
 </html>
